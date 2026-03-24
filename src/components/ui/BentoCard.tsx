@@ -5,6 +5,8 @@ import { Badge } from './Badge'
 interface BentoCardProps {
   eyebrow?: ReactNode
   title: ReactNode
+  /** Untertitel zwischen Haupttitel und Beschreibung */
+  subtitle?: ReactNode
   description?: ReactNode
   graphic?: ReactNode
   items?: string[]
@@ -17,6 +19,7 @@ interface BentoCardProps {
 export function BentoCard({
   eyebrow,
   title,
+  subtitle,
   description,
   graphic,
   items,
@@ -54,9 +57,14 @@ export function BentoCard({
         {eyebrow && (
           <span className="text-eyebrow text-tertiary block">{eyebrow}</span>
         )}
-        <h3 id={headingId} className="mt-1 text-h4 text-primary">
+        <h3 id={headingId} className="mt-1 text-h4 font-semibold text-primary">
           {title}
         </h3>
+        {subtitle && (
+          <p className="mt-2 text-body font-medium text-[var(--color-text-secondary)]">
+            {subtitle}
+          </p>
+        )}
         {description && (
           <p className="mt-2 text-body text-secondary whitespace-pre-line">
             {description}

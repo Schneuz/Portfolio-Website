@@ -29,7 +29,7 @@ wirken.
 - halte Farben, Typografie, Kartenlogik, Spacing und Linienführung konsistent
 - nutze ein ruhiges helles Grundsystem
 - nutze genau eine dominante Akzentfarbe
-- nutze große, klare Typografie
+- nutze grosse, klare Typografie
 - setze Struktur vor Dekoration
 - vereinfache komplexe Sektionen auf Mobile konsequent
 
@@ -39,7 +39,7 @@ wirken.
 - feine Borders
 - 24px Card-Radius
 - subtile Shadows
-- großzügiges Spacing
+- grosszügiges Spacing
 - editoriale, technische Ruhe
 
 # Komponentenlogik

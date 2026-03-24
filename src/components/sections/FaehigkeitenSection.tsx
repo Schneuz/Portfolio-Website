@@ -17,21 +17,21 @@ const branchPositions: Array<{
   right?: string
   transform: string
 }> = [
-  /* Technische Fähigkeiten: bottom-basiert, Abstand zur Mitte = Abstand Sprachen zur Mitte */
-  { bottom: '65%', left: '50%', transform: 'translateX(-50%)' },
+  /* Technische Schwerpunkte: Abstand zur Zentralbox ≈ wie Sprachen unten (symmetrisch) */
+  { bottom: '69%', left: '50%', transform: 'translateX(-50%)' },
   /* Arbeitsweise: weiter vom Zentrum */
   { top: '50%', right: '3%', transform: 'translateY(-50%)' },
-  /* Sprachen: top-basiert, gleicher Abstand zur Mitte wie Technische Fähigkeiten */
-  { top: '65%', left: '50%', transform: 'translateX(-50%)' },
+  /* Sprachen: top-basiert, symmetrisch zum oberen Ast */
+  { top: '67%', left: '50%', transform: 'translateX(-50%)' },
   /* Themen & Fokus: weiter vom Zentrum */
   { top: '50%', left: '3%', transform: 'translateY(-50%)' },
 ]
 
 /** SVG-Linien: Zentrum (50,50) zu den Ast-Zentren, an branchPositions angepasst */
 const lineEnds = [
-  { x: 50, y: 35 },
+  { x: 50, y: 33 },
   { x: 82, y: 50 },
-  { x: 50, y: 65 },
+  { x: 50, y: 68 },
   { x: 18, y: 50 },
 ] as const
 
@@ -47,7 +47,7 @@ export function FaehigkeitenSection() {
       <Container>
         <SectionHeading
           id="faehigkeiten-heading"
-          title="Kompetenzen"
+          title="Meine Kompetenzen"
           intro={`${centralNode} – strukturiert in ${branches.length} Bereichen.`}
         />
 
@@ -78,7 +78,7 @@ export function FaehigkeitenSection() {
 
         {/* Desktop: feste Mindmap mit absoluter Positionierung */}
         <div
-          className="relative mx-auto mt-8 hidden h-[560px] w-full max-w-[920px] lg:block"
+          className="relative mx-auto mt-14 hidden h-[640px] w-full max-w-[960px] pt-4 lg:block"
           role="img"
           aria-label={`Mindmap: ${centralNode} mit ${branches.length} Bereichen`}
         >
@@ -122,10 +122,14 @@ export function FaehigkeitenSection() {
           {branches.map((branch, i) => {
             const pos = branchPositions[i]
             const isHorizontal = i === 0 || i === 2
+            const horizontalBoxClass =
+              i === 0
+                ? 'w-auto max-w-[34rem] min-w-[18rem] px-1'
+                : 'w-auto max-w-[22rem]'
             return (
             <div
               key={branch.id}
-              className={`absolute z-10 flex justify-center ${isHorizontal ? 'w-auto max-w-[22rem]' : 'w-full max-w-[11rem]'}`}
+              className={`absolute z-10 flex justify-center ${isHorizontal ? horizontalBoxClass : 'w-full max-w-[11rem]'}`}
               style={{
                 ...(pos.top && { top: pos.top }),
                 ...(pos.bottom && { bottom: pos.bottom }),
@@ -145,7 +149,9 @@ export function FaehigkeitenSection() {
                 >
                   {branch.label}
                 </h4>
-                <div className={`mt-3 flex justify-center gap-2 ${isHorizontal ? 'flex-row flex-wrap' : 'flex-col items-center'}`}>
+                <div
+                  className={`mt-3 flex justify-center gap-2 ${isHorizontal ? 'flex-row flex-wrap' : 'flex-col items-center'} ${i === 0 ? 'max-w-full' : ''}`}
+                >
                   {branch.children?.map((child) => (
                     <Badge key={child.id} variant="default">
                       {child.label}

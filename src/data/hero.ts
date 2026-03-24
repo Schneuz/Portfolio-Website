@@ -1,4 +1,5 @@
 import type { HeroData } from './types'
+import heroPortrait from '../assets/header2.jpeg'
 
 export const heroData: HeroData = {
   eyebrow: 'Portfolio',
@@ -7,6 +8,7 @@ export const heroData: HeroData = {
   roleFocus: 'Applied AI · Digitale Innovation · Business-IT Schnittstelle.',
   tagline:
     'Digitale Lösungen an der Schnittstelle von Business und IT gestalten.',
+  degreeLine: 'BSc in Wirtschaftsinformatik',
   pitch:
     'Ich bringe Technologie und Business zusammen – von der Idee bis zur validierten Lösung.',
   ctas: [
@@ -14,6 +16,6 @@ export const heroData: HeroData = {
     { label: 'Kontakt aufnehmen', href: '#kontakt' },
   ],
   meta: ['Fokus Zentralschweiz (Luzern, Rotkreuz, Zug)'],
-  imageSrc: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-  imageAlt: 'Portrait',
+  imageSrc: heroPortrait,
+  imageAlt: 'Manuel Luthiger',
 }

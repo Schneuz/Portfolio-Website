@@ -7,6 +7,7 @@ export function HeroSection() {
   const {
     name,
     tagline,
+    degreeLine,
     roleFocus,
     pitch,
     meta,
@@ -93,6 +94,11 @@ export function HeroSection() {
               className="justify-center text-center text-body-large text-secondary sm:text-lg md:text-xl"
             />
           </div>
+          {degreeLine && (
+            <p className="text-center text-body text-secondary">
+              {degreeLine}
+            </p>
+          )}
           {roleFocus && (
             <p className="text-center text-meta text-tertiary">
               {roleFocus}

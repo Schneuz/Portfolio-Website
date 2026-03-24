@@ -13,7 +13,7 @@ function resolveHref(href: string): string {
 }
 
 export function ContactSection() {
-  const { closingText, links } = contactData
+  const { closingText, referencesNote, links } = contactData
 
   const emailLink = links.find((l) => l.type === 'email')
   const socialLinks = links.filter(
@@ -30,7 +30,7 @@ export function ContactSection() {
         <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <SectionHeading
             id="kontakt-heading"
-            title="Kontakt"
+            title="Kontakt & Referenzen"
             intro={closingText}
           />
 
@@ -90,6 +90,12 @@ export function ContactSection() {
               </ul>
             )}
           </nav>
+
+          {referencesNote && (
+            <p className="mt-10 max-w-lg text-balance text-meta text-secondary">
+              {referencesNote}
+            </p>
+          )}
         </div>
       </Container>
     </Section>

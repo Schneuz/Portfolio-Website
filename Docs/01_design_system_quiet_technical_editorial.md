@@ -250,7 +250,7 @@ Card-Stil:
 - Border: 1px solid border
 - Radius: 24px
 - Schatten: sehr subtil
-- großzügiges Padding
+- grosszügiges Padding
 - kein Glassmorphism
 - keine schweren Material-/Neumorphism-Effekte
 
@@ -358,7 +358,7 @@ Desktop:
 - 60/40 Split
 - Text links dominant
 - Bild/Portrait rechts
-- große H1
+- grosse H1
 - Rollenfokus
 - 1 kurzer Differenzierungssatz
 - CTA-Reihe
@@ -481,7 +481,7 @@ Jede Karte erklärt:
 - klare Linktexte
 - keine icon-only Hauptaktionen
 - sinnvolle Alt-Texte
-- ausreichend große Klickflächen
+- ausreichend grosse Klickflächen
 - Motion darf reduziert werden
 
 ---

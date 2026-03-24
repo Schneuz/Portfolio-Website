@@ -61,5 +61,5 @@ Die beigefügte Referenz ist nur für visuelle Richtung, Komposition, Hierarchie
 Übernimm nicht blind die exakte Anordnung aus dem Screenshot.
 Baue die Sektion responsive und mobile-first.
 Desktop darf sich an der Referenz orientieren, aber Tablet und Mobile müssen sinnvoll umgebrochen werden.
-Keine Layout-Entscheidung darf nur für die Screenshot-Größe optimiert sein.
+Keine Layout-Entscheidung darf nur für die Screenshot-Grösse optimiert sein.
 Wenn die Referenz nur den Desktop zeigt, entwickle zusätzlich eine saubere Tablet- und Mobile-Variante.

@@ -5,14 +5,14 @@ export const mindmapData: MindmapData = {
   branches: [
     {
       id: 'tech',
-      label: 'Tech & Tools',
+      label: 'Technische Schwerpunkte',
       children: [
-        { id: 'tech-1', label: 'LLMs' },
-        { id: 'tech-2', label: 'Prompt Engineering' },
-        { id: 'tech-3', label: 'Python' },
-        { id: 'tech-4', label: 'API-Design' },
-        { id: 'tech-5', label: 'YOLO / OpenCV' },
-        { id: 'tech-6', label: 'KI-Workflows' },
+        { id: 'tech-1', label: 'Software Engineering' },
+        { id: 'tech-2', label: 'KI-gestützte Entwicklung' },
+        { id: 'tech-3', label: 'Multimodale Systeme' },
+        { id: 'tech-4', label: 'Computer Vision' },
+        { id: 'tech-5', label: 'API- & Systemdesign' },
+        { id: 'tech-6', label: 'Automatisierung' },
       ],
     },
     {
@@ -20,10 +20,10 @@ export const mindmapData: MindmapData = {
       label: 'Methodik',
       children: [
         { id: 'arbeit-1', label: 'Rapid Prototyping' },
-        { id: 'arbeit-2', label: 'MVPs' },
-        { id: 'arbeit-3', label: 'Anforderungsanalyse' },
-        { id: 'arbeit-4', label: 'Scrum' },
-        { id: 'arbeit-5', label: 'Trend-Assessment' },
+        { id: 'arbeit-2', label: 'Requirements Engineering' },
+        { id: 'arbeit-3', label: 'Iterative Entwicklung' },
+        { id: 'arbeit-4', label: 'Systemdesign' },
+        { id: 'arbeit-5', label: 'Experimentation' },
       ],
     },
     {

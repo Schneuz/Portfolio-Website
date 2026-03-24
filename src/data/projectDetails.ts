@@ -3,7 +3,7 @@ import type { ProjectDetailData } from './types'
 export const projectDetailsById: Record<string, ProjectDetailData> = {
   'proj-1': {
     projectId: 'proj-1',
-    title: 'Echtzeit-Sportanalyse (Computer Vision)',
+    title: 'Echtzeit-Sportanalyse',
     subline: 'Automatisierte Highlight-Erkennung mittels YOLO & OpenCV.',
     category: 'Bachelorarbeit',
     analysis: {
@@ -45,7 +45,7 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
         id: 'r3',
         title: 'Zuverlässige Spielererkennung statt Ballfokus',
         description:
-          'YOLO wird primär für die Erkennung von Spielern eingesetzt, da der Ball in typischen Fußballaufnahmen oft zu klein für robuste Detektion ist.',
+          'YOLO wird primär für die Erkennung von Spielern eingesetzt, da der Ball in typischen Fussballaufnahmen oft zu klein für robuste Detektion ist.',
         icon: 'Users',
       },
       {
@@ -96,11 +96,10 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
       { label: 'Python', icon: 'Code' },
       { label: 'YOLO', icon: 'ScanEye' },
       { label: 'OpenCV', icon: 'Camera' },
-      { label: 'Computer Vision', icon: 'Eye' },
     ],
     ctas: [
       { label: 'Zurück zum Portfolio', href: './', variant: 'secondary' },
-      { label: 'Kontakt für Details', href: './#kontakt', variant: 'primary' },
+      { label: 'Kontakt für Details', href: 'index.html#kontakt', variant: 'primary' },
     ],
   },
   'proj-2': {
@@ -110,9 +109,9 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
     category: 'Hobby · Open Source',
     analysis: {
       challenge:
-        'Multiplayer-Spiele benötigen robuste Backend-Infrastruktur. Skalierbare APIs und erweiterbare Architektur sind entscheidend.',
+        'Lokale Coop-Minigames sollen schnell spielbar und einfach entwickelbar sein. In der Praxis bremsen aber Join, Session-Logik, Rollen und Synchronisation das eigentliche Bauen der Spiele aus.',
       goal:
-        'Plattform-Basis für verschiedene Spiele-Typen mit zentraler API und klarer Erweiterbarkeit.',
+        'Ein lokaler Hub, der die Infrastruktur übernimmt, damit neue Coop-Minigames als Plugins schnell gebaut, locker vibecoded und direkt gemeinsam gespielt werden können.',
     },
     architectureNodes: [
       { id: 'host', label: 'Host Hub', icon: 'Server' },
@@ -196,8 +195,7 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
     ],
     ctas: [
       { label: 'Zurück zum Portfolio', href: './', variant: 'secondary' },
-      { label: 'Code auf GitHub', href: 'https://github.com', variant: 'ghost' },
-      { label: 'Kontakt für Details', href: './#kontakt', variant: 'primary' },
+      { label: 'Kontakt für Details', href: 'index.html#kontakt', variant: 'primary' },
     ],
   },
   'proj-3': {
@@ -216,9 +214,9 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
     ],
     analysis: {
       challenge:
-        'Inkonsistente Projektstarts, hoher manueller Setup-Aufwand und Kontext-Verlust bei komplexen KI-gestützten Entwicklungsaufgaben.',
+        'Viele Ideen folgen ähnlichen Abläufen, werden aber jedes Mal neu aufgesetzt. Gleichzeitig liefern LLMs nicht immer verlässliche Resultate und brauchen gezielte menschliche Korrektur.',
       goal:
-        'Ein industrialisierter Workflow für reproduzierbare Software-Entwicklung mittels autonomer Agenten-Orchestrierung und strikter Phasen-Validierung.',
+        'Eine konsistente, halbautomatische Pipeline mit klaren Phasen und wenigen Human Gates, die wiederkehrende Abläufe standardisiert und den Weg von der Idee zum MVP deutlich beschleunigt.',
     },
     architectureNodes: [
       { id: 'user', label: 'User Input', icon: 'User' },
@@ -356,7 +354,7 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
         id: 'r6',
         title: 'Local-First RAG & Privacy',
         description:
-          'Lokale RAG-Indizierung aller Projektdaten on-premise. Volle Datensouveränität ohne IP-Abfluss an Drittanbieter.',
+          'Lokale RAG-Indizierung von Artefakten, Projektdaten und Entscheidungen. Agent Zero lädt je nach Phase nur relevanten Kontext nach und minimiert so den extern geteilten Projektkontext.',
         icon: 'Database',
       },
     ],
@@ -406,7 +404,7 @@ export const projectDetailsById: Record<string, ProjectDetailData> = {
     ],
     ctas: [
       { label: 'Zurück zum Portfolio', href: './', variant: 'secondary' },
-      { label: 'Kontakt für Details', href: './#kontakt', variant: 'primary' },
+      { label: 'Kontakt für Details', href: 'index.html#kontakt', variant: 'primary' },
     ],
   },
 }

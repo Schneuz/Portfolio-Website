@@ -70,6 +70,8 @@
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Sticky Navbar (~min-h-14 + Padding): Ziel bei #ankern nicht unter der Leiste */
+    scroll-padding-top: 5.5rem;
   }
 
   body {

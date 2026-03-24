@@ -4,18 +4,19 @@ export const profileData: ProfileData = {
   cards: [
     {
       id: 'wer-bin-ich',
-      title: 'Wer bin ich',
-      content: 'Hintergrund und Fokus.',
+      title: 'Wer bin ich?',
+      subtitle: 'Von Mechanik zu Software & KI',
       items: [
-        'Wirtschaftsinformatiker',
-        'AI-Innovator',
-        'LLMs',
+        'Polymechaniker',
+        'BSc in Wirtschaftsinformatik',
+        'Software Engineering',
+        'Agentic AI',
         'Prototyping',
       ],
     },
     {
       id: 'was-suche-ich',
-      title: 'Ziel-Rollen',
+      title: 'Was suche ich?',
       content: 'Rollen an der Schnittstelle von AI, Technik und Business.',
       items: [
         'Applied AI Specialist',
@@ -26,8 +27,8 @@ export const profileData: ProfileData = {
     },
     {
       id: 'schwerpunkte',
-      title: 'Schwerpunkte',
-      content: 'Drei inhaltliche Domänen.',
+      title: 'Was interessiert mich?',
+      subtitle: 'Meine Schwerpunkte',
       items: [
         'Applied AI (LLMs & Agents)',
         'Rapid Prototyping & MVPs',
@@ -36,8 +37,8 @@ export const profileData: ProfileData = {
     },
     {
       id: 'perspektive',
-      title: 'Perspektive',
-      content: 'Wie ich an Probleme herangehe.',
+      title: 'Wie ich an Probleme herangehe?',
+      subtitle: 'Meine Arbeitsweise',
       items: [
         'Validieren vor Skalieren',
         'Iterativ & kritisch',

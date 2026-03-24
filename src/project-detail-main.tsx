@@ -32,7 +32,7 @@ if (!detailData) {
         <Main>
           <ProjectDetailPage data={detailData} />
         </Main>
-        <Footer baseHref="./" />
+        <Footer />
       </AuroraBackground>
     </StrictMode>
   )

@@ -9,6 +9,8 @@ export interface HeroData {
   headline: string
   roleFocus: string
   tagline: string
+  /** z. B. Abschluss unter der Tagline */
+  degreeLine?: string
   /** Optionaler Pitch-Text unter Tagline/Subline */
   pitch?: string
   ctas: HeroCta[]
@@ -19,8 +21,12 @@ export interface HeroData {
 
 export interface ProfileCard {
   id: string
+  /** Fetter Haupttitel (z. B. Frage) */
   title: string
-  content: string
+  /** Optionaler Untertitel direkt unter dem Haupttitel */
+  subtitle?: string
+  /** Optionaler Fliesstext darunter */
+  content?: string
   items?: string[]
 }
 
@@ -49,6 +55,8 @@ export interface ProjectData {
   id: string
   title: string
   description: string
+  /** Kurzer Fokus-Satz; im UI mit Präfix „Fokus:“ auf eigener Zeile */
+  focus: string
   context: string
   stack: string[]
   status?: string
@@ -62,6 +70,23 @@ export interface ProjectData {
 export interface ProjectsData {
   intro?: string
   projects: ProjectData[]
+}
+
+export interface HobbyItem {
+  id: string
+  title: string
+  /** Einfacher Fliesstext (ohne Inline-Link) */
+  description?: string
+  /** Text vor Inline-Link (zusammen mit link + descriptionAfter) */
+  descriptionBefore?: string
+  link?: { href: string; label: string }
+  /** Text nach Inline-Link */
+  descriptionAfter?: string
+}
+
+export interface HobbiesData {
+  intro?: string
+  items: HobbyItem[]
 }
 
 /** Einzelner Schritt im Architektur-Flow (Blueprint Zone) */
@@ -178,6 +203,7 @@ export interface ContactLink {
 
 export interface ContactData {
   closingText?: string
+  referencesNote?: string
   links: ContactLink[]
 }
 

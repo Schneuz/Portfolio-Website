@@ -31,7 +31,7 @@ Oder: Im GitHub-Repository unter **Actions** → **Deploy to GitHub Pages** → 
 
 ### 4. User-Site (username.github.io)
 
-Falls das Repository `username.github.io` heißt (User-Site):
+Falls das Repository `username.github.io` heisst (User-Site):
 
 - `base` muss `/` sein
 - In `vite.config.ts`: Vor dem Build `VITE_BASE=/` setzen oder `.env.production` mit `VITE_BASE=/` anlegen

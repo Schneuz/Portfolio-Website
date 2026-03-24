@@ -31,7 +31,7 @@ export function LebenslaufSection() {
       <Container>
         <SectionHeading
           id="lebenslauf-heading"
-          title="Lebenslauf"
+          title="Mein beruflicher Werdegang"
           intro={`${entries.length} Stationen – neueste zuerst.`}
         />
         <div className="mt-8">

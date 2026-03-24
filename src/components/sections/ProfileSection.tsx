@@ -39,8 +39,8 @@ export function ProfileSection() {
       <Container>
         <SectionHeading
           id="profil-heading"
-          title="Profil & Ziele"
-          intro="Position, Ziel-Rollen, Schwerpunkte und Perspektive."
+          title="Mein Profil"
+          intro="Hintergrund, Ziele, Schwerpunkte und Arbeitsweise."
         />
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {cards.map((card) => (
@@ -50,6 +50,7 @@ export function ProfileSection() {
               aria-labelledby={`card-${card.id}-heading`}
               headingId={`card-${card.id}-heading`}
               title={card.title}
+              subtitle={card.subtitle}
               description={card.content}
               items={card.items}
               graphic={getCardGraphic(card)}

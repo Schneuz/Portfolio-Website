@@ -92,7 +92,7 @@ export function ProjectsSection() {
       ariaLabelledby="projekte-heading"
     >
       <Container>
-        <SectionHeading id="projekte-heading" title="Projekte" intro={intro} />
+        <SectionHeading id="projekte-heading" title="Meine Projekte" intro={intro} />
 
         <div
           ref={containerRef}
@@ -213,9 +213,15 @@ export function ProjectsSection() {
                         />
                       </div>
 
-                      <p className="mt-4 flex-1 text-balance text-body text-[var(--color-text-secondary)]">
-                        {project.description}
-                      </p>
+                      <div className="mt-4 flex-1 text-balance text-body text-[var(--color-text-secondary)]">
+                        <p>{project.description}</p>
+                        <p className="mt-2">
+                          <span className="font-medium text-[var(--color-text-primary)]">
+                            Fokus:{' '}
+                          </span>
+                          {project.focus}
+                        </p>
+                      </div>
 
                       <p className="mt-4 text-balance text-meta text-[var(--color-text-tertiary)]">
                         {project.context}
