@@ -11,10 +11,7 @@ export const heroData: HeroData = {
   degreeLine: 'BSc in Wirtschaftsinformatik',
   pitch:
     'Ich bringe Technologie und Business zusammen – von der Idee bis zur validierten Lösung.',
-  ctas: [
-    { label: 'Projekte ansehen', href: '#projekte' },
-    { label: 'Kontakt aufnehmen', href: '#kontakt' },
-  ],
+  ctas: [],
   meta: ['Fokus Zentralschweiz (Luzern, Rotkreuz, Zug)'],
   imageSrc: heroPortrait,
   imageAlt: 'Manuel Luthiger',

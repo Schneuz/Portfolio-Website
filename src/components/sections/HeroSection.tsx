@@ -1,7 +1,5 @@
 import { heroData } from '../../data'
 import { BlurText } from '../ui/BlurText'
-import { Button } from '../ui/Button'
-import { ChevronDown } from 'lucide-react'
 
 export function HeroSection() {
   const {
@@ -11,7 +9,6 @@ export function HeroSection() {
     roleFocus,
     pitch,
     meta,
-    ctas,
     imageSrc,
     imageAlt,
   } = heroData
@@ -32,7 +29,7 @@ export function HeroSection() {
         {name ?? 'Portfolio'}
       </h1>
 
-      {/* Name, Tagline und CTAs als zentrierte Spalte – Tagline unter dem Namen */}
+      {/* Name und Tagline als zentrierte Spalte */}
       <div className="flex flex-1 flex-col items-center justify-center px-4 pb-24 pt-20">
         <div className="relative flex w-full max-w-4xl flex-col items-center justify-center text-center">
           {firstName && (
@@ -83,7 +80,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Tagline, Subline, Region, Pitch und CTAs unterhalb des Namens */}
+        {/* Tagline, Subline, Region und Pitch unterhalb des Namens */}
         <div className="mt-12 flex w-full max-w-2xl flex-col items-center gap-6 px-6">
           <div className="flex w-full justify-center">
             <BlurText
@@ -110,30 +107,12 @@ export function HeroSection() {
             </p>
           )}
           {pitch && (
-            <p className="text-center text-sm text-secondary">
+            <p className="mx-auto max-w-xl text-center font-display text-lg font-bold leading-snug text-secondary sm:text-xl md:max-w-2xl">
               {pitch}
             </p>
           )}
-          {ctas.length > 0 && (
-            <div className="flex flex-wrap justify-center gap-4">
-              {ctas.map((cta) => (
-                <Button key={cta.href} href={cta.href} variant="primary">
-                  {cta.label}
-                </Button>
-              ))}
-            </div>
-          )}
         </div>
       </div>
-
-      {/* Scroll-Indikator */}
-      <a
-        href="#profil"
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-tertiary transition-colors hover:text-[var(--color-accent)] md:bottom-10"
-        aria-label="Zum Profil scrollen"
-      >
-        <ChevronDown className="h-5 w-5 md:h-8 md:w-8" strokeWidth={2} />
-      </a>
     </section>
   )
 }

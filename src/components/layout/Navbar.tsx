@@ -19,7 +19,7 @@ const navItemsBefore = [
 const navItemsAfter = [
   { href: '#lebenslauf', label: 'Mein beruflicher Werdegang' },
   { href: '#hobbys', label: 'Meine Hobbys' },
-  { href: '#warum-ich', label: 'Warum ich' },
+  { href: '#warum-ich', label: 'Warum ich?' },
   { href: '#kontakt', label: 'Kontakt & Referenzen' },
 ] as const
 

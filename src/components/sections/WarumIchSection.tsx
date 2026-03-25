@@ -49,7 +49,7 @@ export function WarumIchSection() {
       <Container>
         <SectionHeading
           id="warum-ich-heading"
-          title="Warum ich"
+          title="Warum ich?"
           intro="Vier Differenzierungspunkte."
         />
         <div className="mt-8 flex flex-wrap items-stretch justify-center gap-8 md:justify-between lg:flex-nowrap lg:justify-center">
